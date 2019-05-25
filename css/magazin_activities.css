@@ -1,0 +1,31 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main section {
+    display: grid;
+    margin-bottom: 50px;
+}
+
+main section img {
+    width: 100%;
+}
+
+main section p,
+h2 {
+    color: #444;
+    margin: 10px;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+main section:nth-child(odd) {
+    grid-template-columns: 50% 50%;
+}
+
+main section:nth-child(even) {
+    grid-template-columns: 50% 50%;
+}

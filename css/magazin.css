@@ -1,0 +1,98 @@
+#cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #00AFFF;
+    box-shadow: inset 0px 11px 8px -10px #000,
+        inset 0px -11px 8px -10px #000;
+}
+
+.card {
+    width: 80%;
+    height: 100%;
+    align-self: center;
+    margin: 20px 0;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 700px) {
+    #cards {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin: 10px 0 50px 0;
+        padding: 40px 0;
+    }
+
+    .card {
+        width: 30%;
+        margin: 20px 0;
+    }
+}
+
+.cardTitle {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-size: 16pt;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    margin: 3px 0;
+}
+
+.card > img {
+    width: 100%;
+    margin: 0;
+}
+
+.card > p {
+    padding: 10px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.buttonContainer {
+    height: 60px;
+    background-color: #D9F5FF;
+    color: #47C5FF;
+    vertical-align: bottom;
+    transition: background-color 0.5s ease,
+        color 0.5s ease;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+    vertical-align: bottom;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5px;
+    font-variant: small-caps;
+    font-size: 16pt;
+    letter-spacing: 3px;
+}
+
+.buttonContainer:hover {
+    background-color: #47C5FF;
+    color: #FFF;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section#extras {
+    display: block;
+}
